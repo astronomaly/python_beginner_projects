@@ -18,16 +18,19 @@ def create_cipher():
     
 def input_message():
     message = input("Please type your message: ")
-    return message
+    return list(message)
 
 def encode_message(cipher, message):
     encoded_message = []
     for char in message:
         encoded_message.append(cipher[char])
-    return ''.join(encoded_message)
+    return encoded_message
 
-
+def output_message(message):
+    print(''.join(message))
+    
+    
 cipher = create_cipher()
 message = input_message()
 encoded_message = encode_message(cipher, message)
-print(encoded_message)
+output_message(encoded_message)
