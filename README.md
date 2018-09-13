@@ -1,1 +1,1 @@
-# python_beginner_projects
+# Contains projects for learning Python.
