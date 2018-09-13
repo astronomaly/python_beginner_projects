@@ -24,7 +24,8 @@ def encode_message(cipher, message):
     encoded_message = []
     for char in message:
         encoded_message.append(cipher[char])
-    return encoded_message
+    return ''.join(encoded_message)
+
 
 cipher = create_cipher()
 message = input_message()
